@@ -1,0 +1,571 @@
+$main-color: #2aae7f;
+$main-color-hover: #25946c;
+$main-color-active: #f3712b;
+$white: #ffffff;
+$white-text: #fffefe;
+$light-gray: #f1f1f1;
+$dark-333: #333333;
+
+* {
+	box-sizing: border-box;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+body {
+	background: $white;
+	font-size: 18px;
+  	font-family: 'Helvetica',  Arial;
+}
+img {
+	max-width: 100%;
+}
+a {
+	color: $main-color;
+	text-decoration: none;
+	&:hover {
+		color: $main-color-hover;
+	}
+	.active & {
+		#menu & {
+			color: $main-color-active;
+		}
+	}
+}
+.full-container {
+	padding: 0 20px;
+}
+
+.frame-info  {
+	max-width: 473px;
+	h3 {
+		font-size: 46px;
+	}
+	ul {
+		list-style: none;
+    	padding-left: 0px;
+		li {
+			padding-left: 34px;
+			font-size: 20px;
+    		margin-bottom: 30px;
+    		position: relative;
+    		&:before {
+				content: " ";
+				display: block;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				position: absolute;
+				top: 50%;
+			    left: 0;
+			    background: #000;
+			    transform: translateY(-50%);
+    		}
+		}
+	}
+}
+
+/***************************************************************************/
+
+/**
+ * section-1
+ */
+.section-1 {
+	background: url("/../../assets/images/bg-section1.jpg") no-repeat;
+	background-size: cover;
+}
+
+.logo-bar {
+	height: 96px;
+	background: $white;
+	border-top: 5px solid $main-color;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+	> .full-container {
+		height: 100%;
+		padding: 8px 20px;
+	}
+	img {
+		height: 100%;
+	    width: auto;
+	    -webkit-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	    float: left;
+	}
+	#menu {
+		float: left;
+		display: inline-block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin-left: 25px;
+    	margin-top: 15px;
+		li {
+			float: left;
+			margin-right: 15px;
+			a {
+				padding: 15px 20px;
+				display: block;
+			}
+		}
+	}
+}
+
+.btn-apply {
+	color: $white;
+    text-align: center;
+    border-radius: 50px;
+    background: $main-color;
+    font-size: 22px;
+    padding: 12px 32px;
+    display: inline-block;
+}
+
+.section-1 {
+	.text-big {
+		color: $white-text;
+		text-align: center;
+		width: 490px;
+    	height: 490px;
+    	background: rgba(42, 147, 127, 0.7);
+    	border-radius: 50%;
+    	position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+        right: 150px;
+    	padding: 115px 63px;
+	}
+	h2 {
+		font-size: 53px;
+		margin-top: 0;
+		margin-bottom: 14px;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 18px;
+		font-style: italic;
+		font-weight: 400;
+	}
+	.text-apply {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: $light-gray;
+		padding: 20px 90px;
+		text-align: center;
+		.wrap {
+			display: inline-block;
+		}
+	}
+	.intro-text {
+		font-size: 18px;
+		color: $dark-333;
+		float: left;
+		max-width: 576px;
+		text-align: center;
+		margin-right: 20px;
+		margin-bottom: 15px;
+	}
+}
+/**
+ * ******************** / section-1 *********************
+ */
+
+/**
+ * section-2
+ */
+.section-2 {
+	// background: url("/../../assets/images/bg-section2.jpg") no-repeat;
+	// background-size: contain;
+ //    background-position: bottom center;
+    .frame-info {
+	    position: absolute;
+	    left: 20%;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    &.green {
+	    	h3 {
+	    		color: $main-color;
+	    	}
+	    	ul li:before {
+				background: $main-color;
+	    	}
+	    }
+    }
+    .hand-phone {
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    max-width: 600px;
+    }
+    .fruit {
+	    position: absolute;
+	    right: 420px;
+	    bottom: 24px;
+    }
+}
+/**
+ * ******************** / section-2 *********************
+ */
+
+ /**
+ * section-3
+ */
+.section-3 {
+	background: url("/../../assets/images/bg-section3.jpg") no-repeat;
+	background-size: cover;
+    .frame-info {
+    	position: absolute;
+        left: 25%;
+    	top: 60%;
+	    transform: translate(-50%,-50%);
+	    &.white {
+	    	background: rgba(42,147,127,0.7);
+	    	padding: 0 61px 20px 61px;
+	    	box-sizing: content-box;
+	    	h3,ul li {
+	    		color: $white;
+	    	}
+	    	ul li:before {
+				background: $white;
+	    	}
+	    }
+    }
+}
+/**
+ * ******************** / section-3 *********************
+ */
+
+/**
+ * section-4
+ */
+.section-4 {
+	background: url("/../../assets/images/bg-section4.jpg") no-repeat;
+	background-size: cover;
+	background-position: bottom;
+    .frame-info {
+    	position: absolute;
+	    // left: 10%;
+	    // bottom: 100px;
+	    left: 20%;
+	    top: 50%;
+	    transform: translate(-50%,-50%);
+	    &.green {
+	    	h3 {
+	    		color: $main-color;
+	    	}
+	    	ul li:before {
+				background: $main-color;
+	    	}
+	    }
+    }
+    .house,.bike,.wrap-img {
+    	position: absolute;
+    }
+    .wrap-img {
+    	bottom:0;
+    	left: 0;
+    }
+    .house {
+    	right: 0;
+    	bottom: 100%;
+    }
+    .bike {
+	    bottom: 50%;
+	    right: 160px;
+	    max-width: 600px;
+    }
+}
+/**
+ * ******************** / section-4 *********************
+ */
+
+ /**
+ * section-5
+ */
+.section-5 {
+	background: url("/../../assets/images/bg-section5.jpg") no-repeat;
+	background-size: cover;
+    .frame-info {
+    	position: absolute;
+        left: 70%;
+    	top: 60%;
+	    transform: translate(-50%,-50%);
+	    &.white {
+	    	background: rgba(42,147,127,0.7);
+	    	padding: 0 61px 20px 61px;
+	    	box-sizing: content-box;
+	    	h3,ul li {
+	    		color: $white;
+	    	}
+	    	ul li:before {
+				background: $white;
+	    	}
+	    }
+    }
+}
+/**
+ * ******************** / section-5 *********************
+ */
+
+  /**
+ * section-6
+ */
+.section-6 {
+	.frame-info {
+		margin: 0 auto;
+    	text-align: center;
+    	text-align: center;
+	    &.green {
+	    	h3 {
+	    		color: $main-color;
+	    	}
+	    	ul li {
+	    		padding-left: 0;
+	    		&:before {
+					background: $main-color;
+					display: none;
+				}
+	    	}
+	    }
+    }
+
+	.bot-footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		font-size: 12px;
+		background: $light-gray;
+		padding: 20px 0;
+		text-align: center;
+		width: 100%;
+	}
+}
+/**
+ * ******************** / section-6 *********************
+ */
+
+
+/* #Tablet Retena (Landscape) 1366px
+---------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1241px) and (max-width: 1367px) {
+	.section-2 .frame-info {
+	    left: 14%;
+	    top: -141px;
+	}
+	.section-4 {
+		.house {
+			max-width: 800px;
+		}
+		.bike {
+			max-width: 500px;
+		}
+		.frame-info {
+			left: 25%;
+		}
+	}
+	.section-2 .frame-info {
+		left: 50%;
+		transform: translate(-120%,-50%);
+	}
+}
+
+/* #Tablet (Landscape) 1024px
+---------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 960px) and (max-width: 1240px) {
+	.section-2 {
+		.fruit {
+		    right: 323px;
+	    	max-width: 463px;
+	    }
+	    .hand-phone {
+			max-width: 400px;
+	    }
+	    .frame-info {
+    	    left: 10%;
+    		top: -61px;
+	    }
+	}
+	.section-3 .frame-info,
+	.section-5 .frame-info {
+		left: 50%;
+	}
+	.section-4 .frame-info {
+		left: 30%;
+	}
+	.section-4 {
+		.house {
+			max-width: 600px;
+		}
+		.bike {
+			max-width: 300px;
+		}
+		.frame-info {
+			left: 25%;
+		}
+	}
+}
+
+
+/* #Tablet (Portrait) 768px
+---------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.logo-bar #menu li a {
+	    padding: 15px 0px;
+	}
+	.section-2 {
+		.fruit {
+		    right: 323px;
+	    	max-width: 463px;
+	    }
+	    .hand-phone {
+			max-width: 400px;
+	    }
+	    .frame-info {
+    	    left: 10%;
+    		top: -61px;
+	    }
+	}
+	.section-3 .frame-info,
+	.section-5 .frame-info {
+		left: 50%;
+	}
+	.section-4 .frame-info {
+		left: 30%;
+	}
+	.section-4 {
+		.house {
+			max-width: 600px;
+		}
+		.bike {
+			max-width: 300px;
+		}
+		.frame-info {
+			left: 40%;
+		}
+	}
+}
+
+/* #Mobile (Landscape) 480px
+---------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/*  #Mobile (Portrait) 320px
+---------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 100px) and (max-width: 767px) {
+	.logo-bar #menu {
+		display: none;
+	}
+
+	.frame-info {
+		padding: 0 15px;
+		ul {
+			font-size: 30px;
+			li {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.section-2,
+	.section-3,
+	.section-4,
+	.section-5 {
+		.frame-info {
+			position: relative;
+			top: 0;
+			left: 0;
+			transform: none;
+			&.white,
+			&.green {
+				padding: 15px;
+			}
+		}
+	}
+	.logo-bar {
+		height: 50px;
+		> .full-container {
+			padding: 3px 15px;
+		}
+	}
+	.section-1 {
+		.text-big {
+		    padding: 15px;
+		    right: 0;
+		    border-radius: 0;
+		    width: auto;
+		    height: auto;
+		}
+		h2 {
+			font-size: 30px;
+		}
+		h2,p {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.text-apply {
+			padding: 15px;
+		}
+	}
+
+	.section-2 {
+		.fruit {
+		    right: 100px;
+	    	max-width: 263px;
+	    }
+	    .hand-phone {
+			max-width: 200px;
+	    }
+	    .frame-info {
+    	    left: 10%;
+    		top: -61px;
+	    }
+	}
+
+	.section-4 {
+		.house {
+			max-width: 300px;
+		}
+		.bike {
+			max-width: 200px;
+			right: 100px;
+		}
+		.frame-info {
+			top: -65px;
+		}
+	}
+
+	.section {
+		height: 100vh;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
