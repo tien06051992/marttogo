@@ -334,19 +334,43 @@ a:hover {
 /* #Tablet Retena (Landscape) 1366px
 ---------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1241px) and (max-width: 1367px) {
+  .frame-info h3 {
+    font-size: 40px;
+  }
+  .section-1 .text-big  {
+    width: 390px;
+    height: 390px;
+    padding: 79px 38px;
+  }
+  .section-1 h2 {
+    font-size: 37px;
+  }
+  .section-2 .fruit {
+    right: 323px;
+    max-width: 463px; }
+  .section-2 .hand-phone {
+    max-width: 400px;
+  }
   .section-2 .frame-info {
     left: 14%;
-    top: -141px; }
-  .section-4 .house {
-    max-width: 800px; }
-  .section-4 .bike {
-    max-width: 500px; }
-  .section-4 .frame-info {
-    left: 25%; }
-  .section-2 .frame-info {
+    top: -30px;
     left: 50%;
     -webkit-transform: translate(-120%, -50%);
-    transform: translate(-120%, -50%); } }
+    transform: translate(-120%, -50%); 
+  }
+  .section-3 .frame-info {
+    top: 55px;
+  }
+  .section-4 .wrap-img {
+    max-height: 100px;
+  }
+  .section-4 .house {
+    max-width: 600px; }
+  .section-4 .bike {
+    max-width: 300px; }
+  .section-4 .frame-info {
+    left: 25%; }
+}
 
 /* #Tablet (Landscape) 1024px
 ---------------------------------------------------------------------------------------------------------------*/

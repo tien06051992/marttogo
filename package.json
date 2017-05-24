@@ -6,27 +6,28 @@
         "email": "tien06051992@gmail.com"
     },
     "dependencies": {
+        "bower": "^1.8.0",
         "react": "~15.0.2",
         "react-dom": "~15.0.2"
     },
     "devDependencies": {
-        "webpack": "~1.13.1",
         "babel-core": "~6.14.0",
         "babel-loader": "~6.2.5",
-        "babel-preset-react": "~6.11.1",
         "babel-preset-es2015": "~6.14.0",
-        "style-loader": "~0.13.1",
+        "babel-preset-react": "~6.11.1",
+        "concurrently": "~3.1.0",
         "css-loader": "~0.23.1",
-        "sass-loader": "~4.0.0",
+        "extract-text-webpack-plugin": "~1.0.1",
+        "file-loader": "~0.9.0",
+        "live-server": "~1.1.0",
+        "livereload": "~0.5.0",
         "node-sass": "~3.8.0",
         "postcss-loader": "~0.10.0",
         "precss": "~1.4.0",
-        "file-loader": "~0.9.0",
+        "sass-loader": "~4.0.0",
+        "style-loader": "~0.13.1",
         "url-loader": "~0.5.7",
-        "extract-text-webpack-plugin": "~1.0.1",
-        "concurrently": "~3.1.0",
-        "livereload": "~0.5.0",
-        "live-server": "~1.1.0"
+        "webpack": "~1.13.1"
     },
     "scripts": {
         "start": "concurrently --kill-others 'webpack --watch' 'live-server --watch=assets'"
