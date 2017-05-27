@@ -45,7 +45,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	__webpack_require__(5);
+	__webpack_require__(4);
 
 	$(document).ready(function() {
 
@@ -67,31 +67,43 @@
 		/***
 		 * Section 1
 		 */
-		sr.reveal('.text-big h2', { 
-			reset: true,
-			origin: 'top',
-			distance: '20px',
-		});
-		sr.reveal('.text-big p', { 
-			reset: true,
-			origin: 'bottom',
-			distance: '20px',
-		});
-		sr.reveal('.intro-text', { 
-			reset: true,
-			origin: 'left',
-			distance: '20px',
-		});
-		sr.reveal('.btn-apply', { 
-			reset: true,
-			origin: 'right',
-			distance: '20px',
-		});
+		// sr.reveal('.text-big h2', { 
+		// 	reset: true,
+		// 	origin: 'top',
+		// 	distance: '20px',
+		// });
+		// sr.reveal('.text-big p', { 
+		// 	reset: true,
+		// 	origin: 'bottom',
+		// 	distance: '20px',
+		// });
+		// sr.reveal('.intro-text', { 
+		// 	reset: true,
+		// 	origin: 'left',
+		// 	distance: '20px',
+		// });
+		// sr.reveal('.btn-apply', { 
+		// 	reset: true,
+		// 	origin: 'right',
+		// 	distance: '20px',
+		// });
 
 		/***
 		 * Section 2
 		 */
 		 sr.reveal('.section-2 .js-fri-green', { 
+			reset: true,
+			origin: 'left',
+			distance: '100px',
+		});
+
+		sr.reveal('.section-2 .fruit', { 
+			reset: true,
+			origin: 'right',
+			distance: '60px',
+		});
+
+		sr.reveal('.section-2 .hand-phone', { 
 			reset: true,
 			opacity: 0,
 			scale: 0.5,
@@ -145,8 +157,7 @@
 /***/ },
 /* 2 */,
 /* 3 */,
-/* 4 */,
-/* 5 */
+/* 4 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

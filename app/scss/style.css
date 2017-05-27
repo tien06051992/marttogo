@@ -69,7 +69,13 @@ a {
  */
 .section-1 {
   background: url("/../../assets/images/bg-section1.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+
+.section-1-2 {
+  background: url("/../../assets/images/bg-section1-2.jpg") no-repeat;
+  background-size: cover;
+  position: relative; }
 
 .logo-bar {
   height: 96px;
@@ -79,7 +85,7 @@ a {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 10; }
   .logo-bar > .full-container {
     height: 100%;
     padding: 8px 20px; }

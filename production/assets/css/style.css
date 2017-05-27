@@ -76,7 +76,12 @@ a:hover {
  */
 .section-1 {
   background: url("../../assets/images/bg-section1.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; } 
+.section-1-2 {
+  background: url("../../assets/images/bg-section1-2.jpg") no-repeat;
+  background-size: cover;
+  position: relative; } 
 
 .logo-bar {
   height: 96px;
@@ -86,7 +91,7 @@ a:hover {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 10; }
 
 .logo-bar > .full-container {
   height: 100%;
@@ -472,4 +477,13 @@ a:hover {
   .section-4 .frame-info {
     top: -65px; }
   .section {
-    height: 100vh; } }
+    height: 100vh; } 
+  
+  .fp-controlArrow.fp-prev {
+    border-width: 15.5px 20px 15.5px 0;
+  }
+  .fp-controlArrow.fp-next {
+    border-width: 15.5px 0 15.5px 20px;
+  }
+
+  }
